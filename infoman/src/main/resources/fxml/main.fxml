@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="282.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.infoman.controller.MainController">
+   <children>
+      <Pane layoutX="-14.0" prefHeight="605.0" prefWidth="624.0">
+         <children>
+            <Text layoutX="24.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW STUDENT">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="fname" layoutX="140.0" layoutY="92.0" prefHeight="25.0" prefWidth="283.0" />
+            <Text layoutX="37.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="mname" layoutX="140.0" layoutY="126.0" prefHeight="25.0" prefWidth="283.0" />
+            <Text layoutX="34.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lname" layoutX="142.0" layoutY="157.0" prefHeight="25.0" prefWidth="283.0" />
+            <Text layoutX="34.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="number" layoutX="142.0" layoutY="194.0" prefHeight="25.0" prefWidth="283.0" />
+            <Text layoutX="34.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" layoutX="140.0" layoutY="227.0" prefHeight="25.0" prefWidth="283.0" />
+            <Text layoutX="34.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="genderF" layoutX="140.0" layoutY="266.0" mnemonicParsing="false" text="Female" />
+            <RadioButton fx:id="genderM" layoutX="215.0" layoutY="266.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="genderLGBT" layoutX="283.0" layoutY="267.0" mnemonicParsing="false" text="Others" />
+            <Button layoutX="24.0" layoutY="554.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="65.0" text="Save" />
+            <TableView fx:id="table" layoutX="34.0" layoutY="303.0" prefHeight="233.0" prefWidth="575.0">
+              <columns>
+                <TableColumn fx:id="fnameCol" prefWidth="95.33331298828125" text="First Name" />
+                <TableColumn fx:id="mnameCol" prefWidth="90.00003051757812" text="Middle Name" />
+                  <TableColumn fx:id="lnameCol" prefWidth="98.66668701171875" text="Last Name" />
+                  <TableColumn fx:id="numCol" prefWidth="112.0" text="Phone Number" />
+                  <TableColumn fx:id="emailCol" prefWidth="89.0" text="Email" />
+                  <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="87.66668701171875" text="Gender" />
+              </columns>
+            </TableView>
+            <Button fx:id="edit" layoutX="95.0" layoutY="554.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+            <Button fx:id="delete" layoutX="144.0" layoutY="554.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+         </children></Pane>
+   </children>
+</AnchorPane>
